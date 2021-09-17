@@ -23,5 +23,14 @@
 
     php bin/console doctrine:database:create
 
-## Adminer
-    Credentials look at Mysql
+### Adminer
+Credentials look at Mysql
+<a href="localhost:8080">localhost:8080</a>
+
+    User:       symfony
+    password:   secret
+    host:       ysql8-service
+    
+
+### Symfony
+<a href="localhost:8070">localhost:8070</a>
