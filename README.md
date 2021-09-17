@@ -24,12 +24,12 @@
     php bin/console doctrine:database:create
 
 ### Adminer
-Credentials look at Mysql
 <a href="localhost:8080">localhost:8080</a>
 
+    Server:     mysql8-container
     User:       symfony
     password:   secret
-    host:       ysql8-service
+    db:         symfony_docker
     
 
 ### Symfony
