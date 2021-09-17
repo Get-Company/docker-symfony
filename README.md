@@ -1,27 +1,8 @@
 # Get Structure
 
-git clone https://github.com/GaryClarke/nginx-php7.4-mysql8-node-docker-network.git YOUR_DIRECTORY
+    git clone https://github.com/Get-Company/docker-symfony.git  YOUR_DIRECTORY
 
-cd YOUR_DIRECTORY
-
-## docker_yaml Mysql and Adminer:
-
-    environment:
-        MYSQL_ROOT_PASSWORD: 'secret'
-        MYSQL_PASSWORD: 'secret'
-        MYSQL_DATABASE: 'symfony_docker'
-        MYSQL_USER: 'symfony'
-    
-    adminer
-    adminer-service:
-        image: adminer:latest
-        restart: always
-        ports:
-            - 8080:8080
-        environment:
-            ADMINER_DEFAULT_SERVER: mysql8-container
-        networks:
-            - nginx-php74-mysql8-node
+    cd YOUR_DIRECTORY
 
 ## Install containers
     docker-compose up -d --build
